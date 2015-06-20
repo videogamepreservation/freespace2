@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Nebedit - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\daveb\LOCALS~1\Temp\RSP34E.tmp" with contents
+[
+/nologo /G5 /MTd /W4 /GX /Zi /Od /Ob2 /I "code\anim" /I "code\asteroid" /I "code\bmpman" /I "code\cfile" /I "code\cmdline" /I "code\cmeasure" /I "code\controlconfig" /I "code\cutscene" /I "code\debris" /I "code\debugconsole" /I "code\directx" /I "code\fireball" /I "code\gamehelp" /I "code\freespace2" /I "code\fs2launch" /I "code\fred" /I "code\gamesequence" /I "code\gamesnd" /I "code\glide" /I "code\globalincs" /I "code\graphics" /I "code\hud" /I "code\io" /I "code\jumpnode" /I "code\lighting" /I "code\math" /I "code\menuui" /I "code\mission" /I "code\missionui" /I "code\model" /I "code\movie" /I "code\network" /I "code\object" /I "code\observer" /I "code\osapi" /I "code\palman" /I "code\parse" /I "code\particle" /I "code\pcxutils" /I "code\physics" /I "code\playerman" /I "code\popup" /I "code\radar" /I "code\render" /I "code\ship" /I "code\sndman" /I "code\sound" /I "code\starfield" /I "code\stats" /I "code\testcode" /I "code\ui" /I "code\vcodec" /I "code\weapon" /I "code\localization" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "NEBEDIT" /Fo"NebEditDebug/" /Fd"NebEditDebug/" /FD /GZ /c 
+"C:\projects\freespace2_public\code\nebedit\NebEdit.cpp"
+"C:\projects\freespace2_public\code\nebedit\Nebstubs.cpp"
+]
+Creating command line "cwcl.exe @C:\DOCUME~1\daveb\LOCALS~1\Temp\RSP34E.tmp" 
+Creating temporary file "C:\DOCUME~1\daveb\LOCALS~1\Temp\RSP34F.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib winmm.lib msacm32.lib comctl32.lib wsock32.lib code.lib /nologo /subsystem:windows /incremental:yes /pdb:"Nebedit.pdb" /debug /machine:I386 /nodefaultlib:"libc.lib" /nodefaultlib:"libcd.lib" /out:"E:\games\freespace2\Nebedit.exe" /pdbtype:sept /libpath:"debug" 
+.\NebEditDebug\NebEdit.obj
+.\NebEditDebug\Nebstubs.obj
+.\Debug\code.lib
+]
+Creating command line "cwlink.exe @C:\DOCUME~1\daveb\LOCALS~1\Temp\RSP34F.tmp"
+<h3>Output Window</h3>
+Compiling...
+NebEdit.cpp
+Nebstubs.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Nebedit.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

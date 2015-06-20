@@ -1,0 +1,52 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: HelpEd - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"HelpEdDebug/HelpEd.res" /i "code\HelpEd" /d "_DEBUG" /d "_AFXDLL" "C:\projects\freespace2_public\code\HelpEd\HelpEd.rc"" 
+Creating temporary file "C:\DOCUME~1\daveb\LOCALS~1\Temp\RSP34B.tmp" with contents
+[
+/nologo /G5 /MDd /W4 /GX /Zi /Od /I "code\anim" /I "code\asteroid" /I "code\bmpman" /I "code\cfile" /I "code\cmdline" /I "code\cmeasure" /I "code\controlconfig" /I "code\cutscene" /I "code\debris" /I "code\debugconsole" /I "code\directx" /I "code\fireball" /I "code\gamehelp" /I "code\freespace2" /I "code\fs2launch" /I "code\fred" /I "code\gamesequence" /I "code\gamesnd" /I "code\glide" /I "code\globalincs" /I "code\graphics" /I "code\hud" /I "code\io" /I "code\jumpnode" /I "code\lighting" /I "code\math" /I "code\menuui" /I "code\mission" /I "code\missionui" /I "code\model" /I "code\movie" /I "code\network" /I "code\object" /I "code\observer" /I "code\osapi" /I "code\palman" /I "code\parse" /I "code\particle" /I "code\pcxutils" /I "code\physics" /I "code\playerman" /I "code\popup" /I "code\radar" /I "code\render" /I "code\ship" /I "code\sndman" /I "code\sound" /I "code\starfield" /I "code\stats" /I "code\testcode" /I "code\ui" /I "code\vcodec" /I "code\weapon" /I "code\localization" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fo"HelpEdDebug/" /Fd"HelpEdDebug/" /FD /GZ /c 
+"C:\projects\freespace2_public\code\HelpEd\HelpEd.cpp"
+"C:\projects\freespace2_public\code\HelpEd\HelpEdDoc.cpp"
+"C:\projects\freespace2_public\code\HelpEd\HelpEdLine.cpp"
+"C:\projects\freespace2_public\code\HelpEd\HelpEdView.cpp"
+"C:\projects\freespace2_public\code\HelpEd\MainFrm.cpp"
+"C:\projects\freespace2_public\code\HelpEd\StdAfx.cpp"
+]
+Creating command line "cwcl.exe @C:\DOCUME~1\daveb\LOCALS~1\Temp\RSP34B.tmp" 
+Creating temporary file "C:\DOCUME~1\daveb\LOCALS~1\Temp\RSP34C.tmp" with contents
+[
+winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"HelpEd.pdb" /debug /debugtype:both /machine:I386 /nodefaultlib:"libcd" /nodefaultlib:"libc" /out:"HelpEd.exe" /pdbtype:sept /libpath:"debug" 
+.\HelpEdDebug\HelpEd.obj
+.\HelpEdDebug\HelpEdDoc.obj
+.\HelpEdDebug\HelpEdLine.obj
+.\HelpEdDebug\HelpEdView.obj
+.\HelpEdDebug\MainFrm.obj
+.\HelpEdDebug\StdAfx.obj
+.\HelpEdDebug\HelpEd.res
+.\Debug\code.lib
+]
+Creating command line "cwlink.exe @C:\DOCUME~1\daveb\LOCALS~1\Temp\RSP34C.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+HelpEd.cpp
+HelpEdDoc.cpp
+HelpEdLine.cpp
+HelpEdView.cpp
+MainFrm.cpp
+StdAfx.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+HelpEd.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

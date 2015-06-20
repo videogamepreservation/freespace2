@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Cryptstring - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\daveb\LOCALS~1\Temp\RSP345.tmp" with contents
+[
+/nologo /G5 /MLd /W4 /GX /Zi /Od /Ob2 /I "code\anim" /I "code\asteroid" /I "code\bmpman" /I "code\cfile" /I "code\cmdline" /I "code\cmeasure" /I "code\controlconfig" /I "code\cutscene" /I "code\debris" /I "code\debugconsole" /I "code\directx" /I "code\fireball" /I "code\gamehelp" /I "code\freespace2" /I "code\fs2launch" /I "code\fred" /I "code\gamesequence" /I "code\gamesnd" /I "code\glide" /I "code\globalincs" /I "code\graphics" /I "code\hud" /I "code\io" /I "code\jumpnode" /I "code\lighting" /I "code\math" /I "code\menuui" /I "code\mission" /I "code\missionui" /I "code\model" /I "code\movie" /I "code\network" /I "code\object" /I "code\observer" /I "code\osapi" /I "code\palman" /I "code\parse" /I "code\particle" /I "code\pcxutils" /I "code\physics" /I "code\playerman" /I "code\popup" /I "code\radar" /I "code\render" /I "code\ship" /I "code\sndman" /I "code\sound" /I "code\starfield" /I "code\stats" /I "code\testcode" /I "code\ui" /I "code\vcodec" /I "code\weapon" /I "code\localization" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fo"CryptstringDebug/" /Fd"CryptstringDebug/" /FD /GZ /c 
+"C:\projects\freespace2_public\code\Cryptstring\cryptstring.cpp"
+]
+Creating command line "cwcl.exe @C:\DOCUME~1\daveb\LOCALS~1\Temp\RSP345.tmp" 
+Creating temporary file "C:\DOCUME~1\daveb\LOCALS~1\Temp\RSP346.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Cryptstring.pdb" /debug /machine:I386 /out:"Cryptstring.exe" /pdbtype:sept 
+.\CryptstringDebug\cryptstring.obj
+]
+Creating command line "cwlink.exe @C:\DOCUME~1\daveb\LOCALS~1\Temp\RSP346.tmp"
+<h3>Output Window</h3>
+Compiling...
+cryptstring.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Cryptstring.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,24 @@
+Copyright (C) Volition, Inc. 1999.  All rights reserved.
+
+All source code herein is the property of Volition, Inc. You may not sell 
+or otherwise commercially exploit the source or things you created based on the 
+source.
+
+
+4/20/02 : Added very basic windowed D3D mode to help those who don't have access to 2 monitors
+          for Glide debugging. Hooked it in as the -window commandline parameter.   
+
+4/21/02 : Removed updatelauncher, stamper, movieplayer, autorun, fs2launch projects.
+4/21/02 : Added some stubs to Pofview to get it compiling.
+4/21/02 : Added stubs to Nebedit to get it compiling. Added Nebedit_running to ensure software mode startup.
+4/21/02 : Added stubs to fonttool to get it compiling.
+4/21/02 : Added stubs to AC to get it compiling.
+4/21/02 : Hacked out movieplayer and all references to it.
+4/21/02 : Hacked out amd 3d-now specific stuff.
+4/21/02 : Hacked out PXO code.
+
+4/22/02 : Removed stamper stuff. Cleaned out remaining unused files. 
+4/22/02 : Final pass checking all builds.
+
+4/24/02 : Added word statistics for "hack" and "fixme" at the request of jefff.
+4/24/02 : Added more notes to guided_tour.txt

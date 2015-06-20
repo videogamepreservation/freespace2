@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Cfilearchiver - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\daveb\LOCALS~1\Temp\RSP342.tmp" with contents
+[
+/nologo /G5 /MLd /W4 /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fo"CFileArchiverDebug/" /Fd"CFileArchiverDebug/" /FD /GZ /c 
+"C:\projects\freespace2_public\code\Cfilearchiver\CfileArchiver.cpp"
+]
+Creating command line "cwcl.exe @C:\DOCUME~1\daveb\LOCALS~1\Temp\RSP342.tmp" 
+Creating temporary file "C:\DOCUME~1\daveb\LOCALS~1\Temp\RSP343.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Cfilearchiver.pdb" /debug /machine:I386 /out:"Cfilearchiver.exe" /pdbtype:sept 
+.\CFileArchiverDebug\CfileArchiver.obj
+]
+Creating command line "cwlink.exe @C:\DOCUME~1\daveb\LOCALS~1\Temp\RSP343.tmp"
+<h3>Output Window</h3>
+Compiling...
+CfileArchiver.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Cfilearchiver.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

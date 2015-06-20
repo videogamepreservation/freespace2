@@ -1,0 +1,176 @@
+Copyright (C) Volition, Inc. 1999.  All rights reserved.
+
+All source code herein is the property of Volition, Inc. You may not sell 
+or otherwise commercially exploit the source or things you created based on the 
+source.
+
+A guided tour of the FS2 source code,  by DaveB
+-----------------------------------------------
+
+Within this code you will find both razor sharp coolness and horrifying
+atrocities. I'm hoping it'll serve not just as tool for learning how to
+do things, but also for learning how _not_ to do things. Have fun with it.
+
+
+Overview
+--------
+FS2 is an MsDev 6.0 project. Within the workspace are several subprojects.
+
+- Ac. This is the animation conversion utility for generating FS2's
+  custom .ani files.
+
+- CFileArchiver. A very simple command line utility for quickly packing
+  files into .vp files.
+
+- code. 99% of all FS2 code exists in this module. Many of the utility
+  projects have this library as a dependancy and it is organized as a
+  simple set of code folders.
+
+- Cryptstring. A command-line tool for generating super-secret codes from
+  input text. More of a curiosity than anything else ;)
+
+- Fonttool. A simple utility for generating and kerning the font files
+  FS2 uses.
+
+- Fred2. The FS2 mission editor. A giant mass of MFC code - it references
+  plenty of stuff from the code library.
+
+- Freespace2. This generates the FS2 executable. There are only a
+  handful of files in this subproject - most of the game comes from the
+  code library.
+
+- Nebedit. An old utility used for generating FS1 style background nebulae
+  patterns. Not used directly in FS2, but the code to display the old
+  nebulae still exists in the FS2 codebase.
+
+- Pofview. A simple MFC app for viewing POF files as they would appear
+  ingame.
+
+- Scramble. Top-secret Canadian encryption program. Guaranteed to be 
+  unbreakable for at least 20 to 25 minutes.
+
+The critical subprojects most people will be concerned with are code, 
+Freespace2, and Fred2. All of these subprojects have Debug and Release
+(optimized) builds. pstypes.h also contains quite a few conditional
+build switches. 
+
+All source safe checkin headers have been left in for maximum comedy.
+
+This is code-only. You cannot run without having a full copy of the game 
+to supply the data.
+
+
+Stuff that doesn't exist
+------------------------
+
+Several bits of the game have been removed from this release. Nothing
+of major importance. They include the launcher, the movie player, the
+auto-updater, and all code related to PXO and squadwar (for obvious
+reasons).
+
+
+Project settings (Msdev 6.0)
+----------------------------
+
+All of the subprojects that rely on the FS2 data tree to run (code, fred2,
+freespace2, nebedit, pofview) are all currently targeted at
+
+e:\games\freespace2\  
+
+which is the directory I had on my local hard drive for putting this together.
+Before you'll really be able to do anything, you'll need to point the targets
+at wherever your local FS2 install is (make sure to make a copy of your 
+installed executables so you can backtrack!).
+
+To change the destination in MsDev, you'll need to change
+settings->debug->executable for debug session
+settings->debug->working directory
+settings->link->output file name
+
+All projects have been verified as compiling and running properly. So, unless
+I screwed something up between the time of checking everything and building
+the zip file (entirely possible) you should just be able to load the workspace
+and hit F7. If not, hey, just one more thing to play with ;)
+
+
+Post-release addition
+---------------------
+
+I hacked in very quick-and-dirty windowed support for Direct3d mode. 
+The way FS2 was developed, we always could rely on running Glide
+on a second monitor. Trying to do any kind of serious debugging in full
+screen Direct3D is just a recipe for agonizing pain. So windowed D3D 
+should make debugging a whole lot easier for the average guy. I make no
+guarantees about completeness or stability since it was hacked together
+in 3 hours - however it does appear to function properly in both resolutions,
+in both 16 and 32 bit desktops. Depending on your 3d card and your driver
+settings, you may get some texture coordinate wackiness (particularly
+visible on interface screens) but for the purpose of debugging/development
+it should be sufficient. Fiddling with your driver settings in Control Panel
+can make this go away.
+
+You can run the game in windowed mode by adding -window on the command-line.
+
+
+
+Interesting projects
+--------------------
+There's a bunch of cool things that could be done with the code.
+
+- It uses directX 5. It might be fun to bring that whole thing up to
+  speed with DX8.
+
+- The lighting and model rendering code works, but is much more expensive
+  than it needs to be on average. With even a little bit of work, it 
+  wouldn't be too hard to probably triple the throughput of that part of
+  the pipeline (taking advantage of the guard band present in almost all
+  modern 3d cards, maybe even a dash of T&L). 
+
+- The multiplayer code is huge and scary. Its nor particularly "modern" in
+  terms of motion prediction and lag compensation. It could use some taming.
+
+- With the higher fillrates available on video cards today, I'm sure the 
+  full nebula effect could be improved/changed quite a bit. 
+
+- The FS community has been clamoring for higher ship counts and object limits.
+  It would be a pretty trivial matter to have a commandline option that lets
+  you specify MAX_SHIPS and similar constants. The internal stuff could be
+  changed from a static array to a dynamically allocated array at startup. A 
+  few #defines would be need to changed to ints, but beyond that it should be 
+  pretty trivial.
+
+- The Ai code is another huge, intimidating system. There's plenty of room for
+  cool AI functionality.
+
+- There's a mostly empty opengl implementation of the low level graphics code.
+  Might be fun to complete. Although I doubt it would be nearly as fast as D3D
+  or Glide, you never know.
+
+- Fred2 is the omega of all giant unwieldy pieces of code. Its big, its horrifying,
+  and it just doesn't care. View it at your own risk.
+
+- The physics library is pretty well partitioned and lives in its own little
+  world. If you want to add newtonian motion, that's where you'd start.
+
+- The particle system code, while also functional is a bit old fashioned. A
+  little elbow grease could really bring it up to speed and make it able to
+  handle much higher particle counts.
+
+- Mods. Have at it.
+
+- Multi-res interface. For all the masochists out there. 
+
+- There was a demo recording/playback system I half-heartedly was playing with at
+  one point. Its still in there, in very incomplete form.
+
+- The math library is very powerful. Not necessarily a "project" on its own, but
+  its very sophisticated.
+
+- Bmpman is rather brutish. It could be made far more elegant.
+
+- The sexpression code is some of the more elegant and powerful code in the game.
+  Its very extensible and fairly easy to work with. Much functionality can be
+  added with these.
+
+- For every bug you can find, I'll give you $5. No, I'm kidding. I don't have
+  that much money.

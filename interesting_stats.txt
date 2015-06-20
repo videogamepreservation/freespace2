@@ -1,0 +1,58 @@
+Copyright (C) Volition, Inc. 1999.  All rights reserved.
+
+All source code herein is the property of Volition, Inc. You may not sell 
+or otherwise commercially exploit the source or things you created based on the 
+source.
+
+Counts for various words in the code
+------------------------------------
+
+fixed        :  2169
+
+bogus        :  350
+hack         :  157
+whee         :  145
+cool         :  76
+stupid       :  57
+tweak        :  43
+broken       :  41
+dumb         :  28
+fish         :  25
+broke        :  22
+nasty        :  21
+yay          :  21
+efficient    :  20
+complex      :  20
+ugly         :  13
+nicely       :  13
+great        :  11
+silly        :  9
+fixme        :  9
+smart        :  8
+ugh          :  7
+confused     :  6
+insane       :  5
+whoops       :  4
+awesome      :  3
+fancy        :  2
+horrible     :  2
+brute force  :  2
+sucks        :  2
+hateful      :  1
+speedy       :  1
+badly        :  1
+painful      :  1
+intense      :  1
+
+Total lines of source : 
+
+.cpp files  :  394,813
+.h files    :  64,187
+total       :  459,000
+
+
+Total lines of source, not counting comments : 
+
+.cpp files  :  287,553
+.h files    :  36,163
+total       :  323,716

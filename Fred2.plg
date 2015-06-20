@@ -1,0 +1,77 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: fred2 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\daveb\LOCALS~1\Temp\RSP3BB.tmp" with contents
+[
+winmm.lib vfw32.lib msacm32.lib wsock32.lib code.lib /nologo /subsystem:windows /incremental:yes /pdb:"Fred2.pdb" /debug /machine:I386 /nodefaultlib:"libc.lib" /nodefaultlib:"libcd.lib" /nodefaultlib:"libcmtd.lib" /nodefaultlib:"nafxcwd.lib" /out:"e:\games\freespace2\Fred2.exe" /pdbtype:sept /libpath:"debug" 
+.\FredDebug\AddVariableDlg.obj
+.\FredDebug\AdjustGridDlg.obj
+.\FredDebug\AsteroidEditorDlg.obj
+.\FredDebug\BgBitmapDlg.obj
+.\FredDebug\BriefingEditorDlg.obj
+.\FredDebug\CampaignEditorDlg.obj
+.\FredDebug\CampaignFilelistBox.obj
+.\FredDebug\CampaignTreeView.obj
+.\FredDebug\CampaignTreeWnd.obj
+.\FredDebug\CmdBrief.obj
+.\FredDebug\CreateWingDlg.obj
+.\FredDebug\DebriefingEditorDlg.obj
+.\FredDebug\dialog1.obj
+.\FredDebug\DumpStats.obj
+.\FredDebug\EventEditor.obj
+.\FredDebug\FRED.obj
+.\FredDebug\FREDDoc.obj
+.\FredDebug\FredRender.obj
+.\FredDebug\FredStubs.obj
+.\FredDebug\FREDView.obj
+.\FredDebug\Grid.obj
+.\FredDebug\IgnoreOrdersDlg.obj
+.\FredDebug\InitialShips.obj
+.\FredDebug\InitialStatus.obj
+.\FredDebug\MainFrm.obj
+.\FredDebug\Management.obj
+.\FredDebug\MessageEditorDlg.obj
+.\FredDebug\MissionGoalsDlg.obj
+.\FredDebug\MissionNotesDlg.obj
+.\FredDebug\MissionSave.obj
+.\FredDebug\ModifyVariableDlg.obj
+.\FredDebug\OperatorArgTypeSelect.obj
+.\FredDebug\OrientEditor.obj
+.\FredDebug\PlayerStartEditor.obj
+.\FredDebug\PrefsDlg.obj
+.\FredDebug\ReinforcementEditorDlg.obj
+.\FredDebug\Sexp_tree.obj
+.\FredDebug\ShieldSysDlg.obj
+.\FredDebug\ship_select.obj
+.\FredDebug\ShipCheckListBox.obj
+.\FredDebug\ShipClassEditorDlg.obj
+.\FredDebug\ShipEditorDlg.obj
+.\FredDebug\ShipFlagsDlg.obj
+.\FredDebug\ShipGoalsDlg.obj
+.\FredDebug\ShipSpecialDamage.obj
+.\FredDebug\StarfieldEditor.obj
+.\FredDebug\StdAfx.obj
+.\FredDebug\TextViewDlg.obj
+.\FredDebug\WaypointPathDlg.obj
+.\FredDebug\WeaponEditorDlg.obj
+.\FredDebug\wing.obj
+.\FredDebug\wing_editor.obj
+.\FredDebug\FRED.res
+.\Debug\code.lib
+]
+Creating command line "cwlink.exe @C:\DOCUME~1\daveb\LOCALS~1\Temp\RSP3BB.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+Fred2.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
